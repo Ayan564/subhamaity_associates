@@ -4,14 +4,15 @@ import { ShieldCheck, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-300 pt-20 pb-10 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Adjusted to a balanced 3-column grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 mb-16">
+    <footer className="bg-slate-950 text-slate-300 pt-16 pb-8 border-t border-slate-800">
+      {/* Tightened max-width from 7xl to 5xl to make the footer crisp and not too wide */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Adjusted to a clean 2-column grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {/* Brand Column */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center shrink-0">
                 <ShieldCheck className="w-5 h-5 text-slate-950" />
               </div>
               <div>
@@ -29,47 +30,8 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-white font-bold mb-6">Quick Links</h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link
-                  href="#services"
-                  className="hover:text-emerald-400 transition-colors"
-                >
-                  Our Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#calculator"
-                  className="hover:text-emerald-400 transition-colors"
-                >
-                  GST Calculator
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#about"
-                  className="hover:text-emerald-400 transition-colors"
-                >
-                  About Firm
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="hover:text-emerald-400 transition-colors"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
+          {/* Contact Info Column (Right-aligned on desktop for balance) */}
+          <div className="md:justify-self-end">
             <h4 className="text-white font-bold mb-6">Contact</h4>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
