@@ -28,7 +28,7 @@ export default function Navbar() {
 
   const pathname = usePathname();
   const whatsappUrl =
-    "https://wa.me/916297902962?text=Hello%20Subhamaity%20Associates,%20I%20need%20assistance.";
+    "https://wa.me/917602077133?text=Hello%20Subhamaity%20Associates,%20I%20need%20assistance.";
 
   // Group services by category for the Mega Menu
   const groupedServices = servicesData.reduce(
@@ -220,11 +220,11 @@ export default function Navbar() {
           {/* Quick Actions */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+916297902962"
+              href="tel:+917602077133"
               className="flex items-center gap-2 text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="hidden lg:inline">+91 6297902962</span>
+              <span className="hidden lg:inline">+91 7602077133</span>
             </a>
             <a
               href={whatsappUrl}

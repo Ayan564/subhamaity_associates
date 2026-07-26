@@ -75,24 +75,24 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                 <span>
-                  Jalkhabar, Contai,
+                  1st Floor, Rik Das Bazaar, Near State Bank of India
                   <br />
-                  Banamali Pur, WB 721401
+                  Satmile, Contai, Purba Medinipur, West Bengal 721401
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-emerald-500 shrink-0" />
-                <a href="tel:+916297902962" className="hover:text-emerald-400">
-                  +91 6297902962
+                <a href="tel:+917602077133" className="hover:text-emerald-400">
+                  +91 7602077133
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-emerald-500 shrink-0" />
                 <a
-                  href="mailto:taxoffice.co.in@gmail.com"
+                  href="mailto:subhamaityassociates@yahoo.com"
                   className="hover:text-emerald-400"
                 >
-                  taxoffice.co.in@gmail.com
+                  subhamaityassociates@yahoo.com
                 </a>
               </li>
             </ul>

@@ -5,7 +5,7 @@ import { MessageSquare } from "lucide-react";
 
 export default function WhatsAppFAB() {
   const whatsappUrl =
-    "https://wa.me/916297902962?text=Hello%20Subhamaity%20Associates,%20I%20need%20quick%20assistance.";
+    "https://wa.me/917602077133?text=Hello%20Subhamaity%20Associates,%20I%20need%20quick%20assistance.";
 
   return (
     <div className="fixed bottom-6 right-6 z-[99] group cursor-pointer">

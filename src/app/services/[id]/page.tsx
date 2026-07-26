@@ -31,7 +31,7 @@ export default async function ServiceDetail({
     notFound();
   }
 
-  const whatsappUrl = `https://wa.me/916297902962?text=Hello%20Subhamaity%20Associates,%20I%20need%20assistance%20with%20${encodeURIComponent(service.title)}.`;
+  const whatsappUrl = `https://wa.me/917602077133?text=Hello%20Subhamaity%20Associates,%20I%20need%20assistance%20with%20${encodeURIComponent(service.title)}.`;
 
   const jsonLd = {
     "@context": "https://schema.org",

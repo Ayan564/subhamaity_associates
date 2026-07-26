@@ -85,10 +85,10 @@ export default function Contact() {
                     Call Us Directly
                   </h4>
                   <a
-                    href="tel:+916297902962"
+                    href="tel:+917602077133"
                     className="text-slate-400 hover:text-emerald-400 transition-colors mt-1 block"
                   >
-                    +91 6297902962
+                    +91 7602077133
                   </a>
                 </div>
               </div>
@@ -102,10 +102,10 @@ export default function Contact() {
                     Email Address
                   </h4>
                   <a
-                    href="mailto:taxoffice.co.in@gmail.com"
+                    href="mailto:subhamaityassociates@yahoo.com"
                     className="text-slate-400 hover:text-emerald-400 transition-colors mt-1 block"
                   >
-                    taxoffice.co.in@gmail.com
+                    subhamaityassociates@yahoo.com
                   </a>
                 </div>
               </div>
@@ -117,9 +117,9 @@ export default function Contact() {
                 <div>
                   <h4 className="text-white font-bold text-lg">Head Office</h4>
                   <p className="text-slate-400 mt-1">
-                    Jalkhabar, Contai,
+                    1st Floor, Rik Das Bazaar, Near State Bank of India
                     <br />
-                    Banamali Pur, West Bengal 721401
+                    Satmile, Contai, Purba Medinipur, West Bengal 721401
                   </p>
                 </div>
               </div>
@@ -246,11 +246,11 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* 🌟 SWIGGY / ZOMATO STYLE FLOATING MAP CONTAINER 🌟 */}
+        {/* 🌟 SWIGGY / ZOMATO STYLE CUSTOM MAP CONTAINER 🌟 */}
         <div className="w-full h-96 sm:h-[450px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative group">
-          {/* The Google Map iframe with a slight contrast filter to match dark theme */}
+          {/* The Google Map iframe */}
           <iframe
-            src="https://maps.google.com/maps?q=Jalkhabar,%20Contai,%20West%20Bengal&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=QQH2+6P+Contai,+West+Bengal&t=&z=17&ie=UTF8&iwloc=near&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -261,22 +261,40 @@ export default function Contact() {
             className="w-full h-full"
           ></iframe>
 
-          {/* Floating App-Like Card Overlay (Just like Zomato/Swiggy restaurant location cards) */}
-          <div className="absolute bottom-6 left-6 right-6 sm:right-auto sm:max-w-sm bg-slate-900/95 backdrop-blur-md p-6 rounded-2xl border border-slate-700 shadow-2xl flex items-center justify-between gap-4">
+          {/* 🌟 CUSTOM THEMED BRAND PIN MARKER OVERLAY (Center of Map) 🌟 */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-10 flex flex-col items-center">
+            <div className="relative flex items-center justify-center">
+              {/* Pulsing ring matching theme */}
+              <div className="absolute w-14 h-14 bg-emerald-500 rounded-full animate-ping opacity-75"></div>
+              {/* Core Pin Icon */}
+              <div className="relative w-11 h-11 bg-slate-900 border-2 border-emerald-400 rounded-full flex items-center justify-center shadow-2xl">
+                <MapPin className="w-6 h-6 text-emerald-400" />
+              </div>
+            </div>
+            {/* Custom Label Tag */}
+            <div className="mt-2.5 bg-slate-900/95 text-white text-xs font-bold px-3.5 py-1.5 rounded-xl border border-emerald-500/50 shadow-2xl whitespace-nowrap backdrop-blur-md flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Subhamaity Associates Head Office
+            </div>
+          </div>
+
+          {/* Floating App-Like Card Overlay at Bottom Left */}
+          <div className="absolute bottom-6 left-6 right-6 sm:right-auto sm:max-w-sm bg-slate-900/95 backdrop-blur-md p-6 rounded-2xl border border-slate-700 shadow-2xl flex items-center justify-between gap-4 z-20">
             <div className="space-y-1">
               <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950 px-2.5 py-0.5 rounded-full border border-emerald-800">
-                Head Office
+                Exact Location
               </span>
               <h4 className="text-white font-bold text-base mt-1">
                 Subhamaity Associates
               </h4>
-              <p className="text-xs text-slate-400">
-                Jalkhabar, Contai, Banamali Pur, WB 721401
+              <p className="text-xs text-slate-400 leading-relaxed">
+                1st Floor, Rik Das Bazaar, Near State Bank of India, Satmile,
+                Contai, Purba Medinipur, West Bengal 721401
               </p>
             </div>
 
             <a
-              href="https://maps.google.com/?q=Jalkhabar,+Contai,+West+Bengal"
+              href="https://maps.google.com/?q=QQH2+6P+Contai,+West+Bengal"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-emerald-600 hover:bg-emerald-500 text-white p-3 rounded-xl transition-all shadow-lg shrink-0 flex items-center justify-center group-hover:scale-105"
